@@ -1,0 +1,43 @@
+.square{
+  border: 2px black solid;
+  background-color: whitesmoke;
+  width: 8rem;
+  height: 8rem;
+  transition: 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+}
+.square:hover{
+  background-color: lightgrey;
+}
+
+.container{
+  display:grid;
+  width: fit-content;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+}
+
+@media (max-width: 480px){
+  .square{
+      height: 6rem;
+      width: 6rem;
+  }
+}
+
+@media (min-width:481px){
+  .square{
+      height: 10rem;
+      width: 10rem;
+  }
+}
+@media (min-width:720px){
+  .square{
+      height: 12rem;
+      width: 12rem;
+  }
+}
